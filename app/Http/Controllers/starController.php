@@ -24,7 +24,7 @@ class starController extends Controller
     
     public function generic()
     {
-        $starwars = starwars::all();
+        $starwars = Starwars::all();
         $informacion = [];
         foreach ($starwars as $star) {
             $informacion[] = [
